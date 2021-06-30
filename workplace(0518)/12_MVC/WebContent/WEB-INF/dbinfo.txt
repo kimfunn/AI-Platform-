@@ -1,0 +1,13 @@
+oracle
+driver=oracle.jdbc.OracleDriver
+url=jdbc:oracle:thin:@127.0.0.1:1521:xe
+user=scott
+pw=TIGER
+
+
+mariadb
+_driver=org.mariadb.jdbc.Driver
+_url=jdbc:mariadb://127.0.0.1:3306/webdb
+_user=root
+_pw=1234
+

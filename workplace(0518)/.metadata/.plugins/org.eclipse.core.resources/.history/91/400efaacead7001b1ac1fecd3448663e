@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans   
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+http://www.springframework.org/schema/aop
+http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<!-- <bean class="web.controller.SimpleUrlController" id="simpleUrlController"></bean>
+ -->
+	<bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping" id="urlMapping">
+		<property name="mappings">
+			<props>
+				<prop key="/test/*.do">userController</prop> <!--  모든 do 가 들어오면 userController 로 들어가라 -->
+			</props>
+		</property>
+	</bean>
+	
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" id="viewResolver">
+		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView"></property>
+		<property name="prefix" value="/test/"></property>
+		<property name="suffix" value=".jsp"></property>
+	</bean>
+	
+	<bean class="web.controller.UserController" id="userController">
+		<property name="methodNameResolver">
+			<ref local="userMethodNameResolver"/>
+		</property>
+	</bean>
+	
+	<bean class= "org.springframework.web.servlet.mvc.multiaction.PropertiesMethodNameResolver" 
+	id="userMethodNameResolver">
+		<property name="mappings">
+			<props>
+				<prop key="/test/login.do">login</prop>
+				<prop key="/test/memberInfo.do">memberInfo</prop>
+			</props>
+		</property>
+	</bean>
+</beans>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+       "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans> <!--  루트태그 하위  객체 주문서 --> 
+	<bean class="ex01.Hello" id="h">
+		<property name="msg"> <!--  SET 메소드 (데이터를 주입받는 셋메소드) -->
+			<value> 안녕? 길동</value>
+		</property>
+	</bean>
+	
+	<bean class ="ex01.Hello" id="h2">
+		<property name="msg">
+			<value> Hello, Spring</value>
+		</property>
+	</bean>
+
+	<bean class="ex02.Circle" id="c"></bean>
+	<bean class="ex02.Rectangle" id="r"></bean>
+	<bean class="ex02.Triangle" id="t"></bean>
+	
+	<bean class="ex03_member.MemberService" id="memberService">
+		<property name="dao" ref="memberDAO">
+		</property>
+	</bean>
+	
+ 	<bean class="ex03_member.MemberDAO" id="memberDAO">
+	</bean>
+</beans>
+                             

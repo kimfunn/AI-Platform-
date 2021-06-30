@@ -1,0 +1,96 @@
+package web.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.Date;
+
+import javax.naming.Context;
+import javax.naming.InitialContext;
+import javax.sql.DataSource;
+
+import web.util.ShopException;
+import web.vo.ArticleVO;
+import web.vo.MemberVO;
+
+public class BoardDAO {
+	DataSource ds;
+	//동시성 문제 
+	//C
+	public BoardDAO() {
+		//1. 드라이버 등록 //한번만 해야 좋은일 (계속 반복하면 request 건수 만큼 수행됨)
+		// connection full 찾기
+		try {
+			Context initCtx = new InitialContext();
+			Context envCtx = (Context) initCtx.lookup("java:comp/env");
+			ds = (DataSource) envCtx.lookup("jdbc/MyDB"); //connectionPool
+			
+			
+		} catch (Exception e) {
+			System.out.println("드라이버 등록 실패");
+			}
+	}
+
+	public ArrayList<ArticleVO> selectAllArticles() {
+			Connection con = null;
+			PreparedStatement st = null;
+			ResultSet rs=null;
+			try {
+			
+			
+			//2. 연결 (Connection 얻기)
+			 con= ds.getConnection();//대여
+		
+		
+			//3. Statement 생성
+			 st = con.prepareStatement("select LEVEL, articleNO, parentNO,title,content,id,writeDate "
+			 		+ " from t_board"
+			 		+ " start with parentNO=0"
+			 		+ " connect by prior articleno=parentno"
+			 		+ " order siblings by articleNO desc;");//sql문 들어가야함
+			 
+			//4. SQL 전송 ? 없어서 필요없음
+/*			st.setString(1, vo.getId());
+			st.setString(2, vo.getPw());
+*/		
+			rs=st.executeQuery();
+			
+			
+			//5. 결과얻기
+			ArrayList<ArticleVO> list=new ArrayList<ArticleVO>();
+			while (rs.next()) {
+				int level=rs.getInt("level");
+				int articleNO=rs.getInt("articleNO");
+				int parentNO=rs.getInt("parentNO");
+				String title=rs.getString("title");
+				String content=rs.getString("content");
+				String id=rs.getString("id");
+				Date writeDate=rs.getDate("writeDate");
+				
+				ArticleVO vo =new ArticleVO( level, articleNO, parentNO, title, content, null,id, writeDate);
+				list.add(vo);
+			} 
+			return null;
+			//6. 종료
+			
+			}catch(Exception e) {
+				e.printStackTrace(); //디버깅을 위한 실행시에는 빼야함 보안을 위해 
+				throw new ShopException("로그인실패");
+				
+			}finally {
+				//6. 종료
+				try {
+					
+					st.close(); 
+					con.close(); //반납
+				}catch(Exception e) {
+					
+				}
+			}
+			
+		}
+		
+	}
+
+}

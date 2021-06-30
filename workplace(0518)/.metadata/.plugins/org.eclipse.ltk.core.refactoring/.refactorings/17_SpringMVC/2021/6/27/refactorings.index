@@ -1,0 +1,15 @@
+1624856167683	Rename package 'web.controller'
+1624856181958	Rename package 'web.Controller'
+1624856263957	Move 42 resources to 'lib'
+1624856275914	Delete element
+1624856326990	Rename compilation unit 'simpleUrlController.java'
+1624868832763	Encapsulate field 'memberService'
+1624928344830	Move 3 resources to 'WEB-INF'
+1624929238676	Rename resource 'jsp.jsp'
+1624929242435	Move 'listMembers.jsp' to 'views'
+1624929247070	Delete element
+1624934633857	Rename resource 'NewFile.xml'
+1624934818725	Delete element
+1624934977886	Rename package 'mappers'
+1624940432356	Rename type 'MemberDAO'
+1624940475354	Copy compilation unit

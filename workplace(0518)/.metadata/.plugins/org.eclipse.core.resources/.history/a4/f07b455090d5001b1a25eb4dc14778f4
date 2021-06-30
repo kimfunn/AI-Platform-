@@ -1,0 +1,13 @@
+package ex02;
+
+public class Test {
+
+		public static void main(String[] args) {
+			Circle c= new Circle();
+			c.areaCircle();
+			
+			
+			Rectangle r = new Rectangle();
+			r.areaRec();
+		}
+}

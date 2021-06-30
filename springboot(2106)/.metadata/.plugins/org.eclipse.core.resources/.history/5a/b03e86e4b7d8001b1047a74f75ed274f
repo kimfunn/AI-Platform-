@@ -1,0 +1,16 @@
+package web.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import web.dao.MemberDAO;
+
+@Service
+public class MemberService {
+	
+	@Autowired //@repository memberDAO 와 매핑됨
+	MemberDAO memberDAO;
+	
+	
+
+}

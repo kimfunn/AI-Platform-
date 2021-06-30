@@ -1,0 +1,16 @@
+package ex02;
+
+public class Test {
+
+		public static void main(String[] args) {
+			shape c= new Circle();
+			c.area();
+			
+			
+			shape r = new Rectangle();
+			r.area();
+			
+			shape t=new Triangle();
+			t.area();
+		}
+}

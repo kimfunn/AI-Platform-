@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#basketInsertBtn').click(function(){
+			
+			const product=$('input:radio[name=product]:checked'); // input:checkbox[조건][name=subject]:checked => 체크된 것
+			//js 로
+		/* 	const subject_value=[] //{} 객체 []: 베열
+			for (let i=0; i<subject.length; i++){
+				subject_value.push(subject[i].value);
+					
+				
+			} */
+			const product_value=product[0].value;
+			
+			//console.log(opener.document.getElementById("welcomeMsg"));
+			
+			//회원가입 요청
+			//AJAX 기술 활용 https://www.w3schools.com/js/js_ajax_intro.asp
+			// JQuery-AJAX https://www.w3schools.com/jquery/jquery_ajax_intro.asp
+			/* 
+			$.get('../Main?name='+name+"&id="+id+"&pw="+pw,function(data, status){
+				alert("Data: " + data + "\nStatus: " + status);
+				window.close();
+			}); */
+
+			$.post("../main",
+					  {
+						sign :"basketInsert",
+					    product_value
+					  	 //비구조화 할당
+					  },
+					  function(data){
+						    alert(data);
+						  
+				 		   }); 
+			
+			
+			
+			//opener.document.getElementById("welcomeMsg").textContent=name+"님 환영합니다";
+		
+		});
+		
+		$("#basketViewBtn").click(function(){
+			$.post('../main',
+					{sign:"basketView"},
+					function(data){
+						$('#basketViewDiv').html(data);	
+			
+			}
+				
+			);	
+			
+		});
+	});
+
+</script>
+</head>
+<body>  <!--  input 태그에서 id를 주면 같은 거 주지 못함 따라서 체크박스는 name으로 줘야함 -->
+	상품을 선택후 장바구니 담기 버튼을 눌러 주세요.<br>
+	
+	<img src='../img/냉장고.png' width='100px'> <input name='product' type="radio" value ="냉장고"><br>
+	<img src='../img/세탁기.png' width='100px'> <input name='product' type="radio" value ="세탁기"><br>
+	<img src='../img/티비.png' width='100px'> <input name='product' type="radio" value ="TV"><br>
+
+	<button id="basketInsertBtn">장바구니 담기</button> <!--  id는 태그를 유일화 , name은 데이터를 서버로 보내려고 하는 것-->
+	<hr>
+	<button id="basketViewBtn"> 장바구니 보기</button><br>
+	<div id="basketViewDiv"> </div>
+</body>
+</html>

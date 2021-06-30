@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="utf-8" import = "java.util.Date,java.io.*"%>  <!-- 디렉티브태그 -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+</head>
+<body>
+  	현재 시각 : 
+  	<% 
+  	
+  		Date today = new Date(); 
+  		out.append(today.toString());
+  		FileWriter fw = new FileWriter("test.txt");
+  		fw.write(today.toString());
+  		fw.close();		
+  	%>
+</body>
+</html>

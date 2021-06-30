@@ -1,0 +1,4 @@
+
+#Server
+server.port=8088
+server.servlet.session.timeout=360000

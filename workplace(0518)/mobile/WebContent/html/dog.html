@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>Insert title here</title>
+
+<!-- 초기화 -->
+<style type="text/css">
+	*{
+		margin:0;
+		padding: 0;
+		font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	}
+	
+	a{ text-decoration: none;}
+	img { border: 0;}
+	li{list-style: none;}
+</style>
+
+<!-- 공통 -->
+<style type="text/css">
+	.container{
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+</style>
+
+<!-- 헤더 -->
+<style type="text/css">
+	#main-header{
+		padding: 10px 5px;
+	}
+	
+	#main-header h1{
+		font-size:20px;
+		font-weight: normal;
+		line-height:27px;
+		color:#222;		
+	}
+	
+	#main-header ul{
+		margin-top:20px;
+		margin-bottom:10px;
+	}
+	
+	#main-header li{
+		margin-top:10px;
+		margin-bottom:10px;
+	}
+	
+	#main-header li a{
+		color:#555;
+	}
+	
+	#main-header li.actrive a{
+		color:black;
+		font-weight:500;
+	}
+	
+	#main-header label{
+		text-align:center;
+		float:right;
+		width:40px;
+		height:27px;
+		line-height:27px;
+		color:#222;
+		border: 1px solid #222;
+		border-radius:5px;
+	}
+	
+	#checkbox{
+		display:none;
+	}
+	
+	#checkbox + nav{
+		display:block;
+	}
+	
+	#checkbox:checked + nav{
+		display:none;
+	}
+</style>
+
+<!-- 본문과 푸터 구성 -->
+    <style>
+        #main-content {
+            background: #00afa0;
+            padding: 40px 15px 30px;
+        }
+
+        #main-content h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: white;
+            font-weight: 500;
+        }
+
+        #main-content p {
+            color: #222;
+            text-align: center;
+            color: white;
+        }
+
+        #sub-content {
+            padding-top: 30px;
+        }
+
+        #sub-content h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        #sub-content h2 {
+            text-align: center;
+            color: #333;
+            font-size: 17px;
+        }
+
+        #sub-content p {
+            color: #555;
+        }
+
+        #sub-content img {
+            width: 200px;
+            display: block;
+            margin: 10px auto;
+        }
+
+        #main-footer {
+            padding-top: 40px;
+        }
+
+        footer {
+            background: #323232;
+            color: white;
+            font-size: 12px;
+            text-align: center;
+            line-height: 40px;
+        }
+    </style>
+    
+    
+    <!-- 섹션 -->
+    <style>
+        /* 미디어 쿼리를 지원하지 않는 웹 브라우저 */
+        #main-section {
+            width: 920px;
+            margin: 0 auto;
+        }
+
+        /* 3줄 */
+        @media (max-width: 919px) {
+            #main-section { width: 690px; }
+        } 
+
+        /* 4줄 */
+        @media (min-width: 920px) and (max-width:1149px) {
+            #main-section { width: 920px; }
+        } 
+
+        /* 5줄 */
+        @media (min-width:1150px) and (max-width:1379px) {
+            #main-section { width: 1150px; }
+        }
+
+        /* 6줄 */
+        @media (min-width:1380px) {
+            #main-section { width: 1380px; }
+        }
+    </style>
+    
+    
+    <!-- 종이 스타일 -->
+    <style>
+        .paper {
+            width: 190px;
+            margin-top: 10px;
+            padding: 15px 15px 0;
+            font-size: 11px;
+            background: #FFFFFF;
+            box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+        }
+
+        .paper-content {
+            margin: 0 -15px;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background: #F2F0F0;
+
+            overflow: hidden;
+        }
+
+        .paper-description {
+            margin: 10px 0;
+        }
+
+        .paper-link {
+            display: block;
+            float: left;
+        }
+
+        .paper-text {
+            float: left;
+            width: 150px;
+            margin-left: 10px;
+        }
+        
+           <style>
+        #darken-background {
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 100%; 
+
+            display: none;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 10000;
+            overflow-y: scroll;
+        }
+
+        #lightbox {
+            width: 700px;
+            margin: 20px auto; padding: 15px;
+
+            border: 1px solid #333333;
+            border-radius: 5px;
+            background: white;
+            box-shadow: 0 5px 5px rgba(34, 25, 25, 0.4);
+
+            text-align: center;
+        }
+
+        .user-information {  overflow: hidden;  text-align: left; }
+        .user-information-image { float: left; width: 70px; }
+        .user-information-text { float: right; width: 620px;  }
+        .lightbox-splitter { margin: 10px 0; }
+    </style>
+    </style>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="../js/jquery.masonry.min.js"></script>
+    <script src="../js/jquery.imagesloaded.min.js"></script>
+    
+    <script>
+
+
+        // 페이지
+        $(document).ready(function () {
+            // 이미지 로드 확인
+            $('#main-section').imagesLoaded(function () {
+                // jQuery Masonry 플러그인 적용
+                $('#main-section').masonry({
+                    itemSelector: '.paper',
+                    columnWidth: 230,
+                    isAnimated: true
+                });
+            });
+		});
+          
+        // 라이트 박스
+        $(document).ready(function () {
+            function showLightBox() {
+                // 라이트박스를 보이게 합니다.
+                $('#darken-background').show();
+                $('#darken-background').css('top', $(window).scrollTop());
+                // 스크롤을 못하게 합니다.
+                $('body').css('overflow', 'hidden');
+            }
+
+            function hideLightBox() {
+                // 라이트박스를 안 보이게 합니다.
+                $('#darken-background').hide();
+
+                // 스크롤을 하게 합니다.
+                $('body').css('overflow', '');
+            }
+
+            // 라이트박스 제거 이벤트
+            $('#darken-background').click(function () {
+                hideLightBox();
+            });
+
+              // 클릭 이벤트 연결
+            $('.paper').click(function () {
+                showLightBox();
+            });
+
+            // 라이트박스 제거 이벤트 보조
+            $('#lightbox').click(function (event) {
+                event.stopPropagation()
+            });
+        });
+    </script>
+    </script>
+
+
+</head>
+<body>
+	<div id="main-header">
+		<div class="container">
+			<div>
+				<label for="checkbox">▼</label>
+				<h1>Pet Store</h1>
+			</div>
+			<input id="checkbox" checked="checked" type="checkbox">
+			<nav>
+				<ul>
+					<li><a href="#">Brand</a></li>
+					<li class="active"><a href="#">Network</a></li>
+					<li><a href="#">Store</a></li>
+					<li><a href="#">Support</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	
+	<div id="main-content">
+		<article class="container">
+			<h1>애완동물 용품 샵</h1>
+			<p>귀여운 내새끼들에게 필요한 모든 것이 있어요~^^</p>
+		</article>
+	</div>
+	
+	<!-- 본문 영역 --> 
+    <section id="main-section"> 
+		
+		<script type="text/javascript">
+		let paperDiv='<div class="paper">';
+		paperDiv += '<div class="paper-holder">';
+		paperDiv += '  <a><img width="190" src="http://placekitten.com/190/328" /></a> ';
+		paperDiv += '</div> ';
+		paperDiv += '<p class="paper-description">Lorem ipsum dolor sit amet</p> ';
+		paperDiv += ' <div class="paper-content"> ';
+		paperDiv += '  <a class="paper-link" href="#"><img src="http://placekitten.com/30/30" /></a> ';
+		paperDiv += ' <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sem mi, egestas a facilisis eget, egestas ut magna.</p> ';
+		paperDiv += ' </div> ';
+		paperDiv += ' </div> ';
+		
+		let mainSection=document.getElementById('main-section');
+        let sum='';
+		for(let i=0; i<10; i++){
+  			sum += paperDiv;   	 
+         }
+		
+		mainSection.innerHTML=sum;
+		
+		
+         </script>
+        <div class="paper"> 
+            <div class="paper-holder"> 
+                <a><img width="190" src="http://placekitten.com/190/328" /></a> 
+            </div> 
+            <p class="paper-description">Lorem ipsum dolor sit amet</p> 
+            <div class="paper-content"> 
+                <a class="paper-link" href="#"><img src="http://placekitten.com/30/30" /></a> 
+                <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sem mi, egestas a facilisis eget, egestas ut magna.</p> 
+            </div> 
+        </div> 
+         
+        <div class="paper"> 
+            <div class="paper-holder"> 
+                <a><img width="190" src="http://placekitten.com/190/290" /></a> 
+            </div> 
+            <p class="paper-description">Lorem ipsum dolor sit amet</p> 
+            <div class="paper-content"> 
+                <a class="paper-link" href="#"><img src="http://placekitten.com/30/30" /></a> 
+                <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sem mi, egestas a facilisis eget, egestas ut magna.</p> 
+            </div> 
+        </div> 
+         
+        <div class="paper"> 
+            <div class="paper-holder"> 
+                <a><img width="190" src="http://placekitten.com/190/200" /></a> 
+            </div> 
+            <p class="paper-description">Lorem ipsum dolor sit amet</p> 
+            <div class="paper-content"> 
+                <a class="paper-link" href="#"><img src="http://placekitten.com/30/30" /></a> 
+                <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sem mi, egestas a facilisis eget, egestas ut magna.</p> 
+            </div> 
+        </div> 
+         
+        <div class="paper"> 
+            <div class="paper-holder"> 
+                <a><img width="190" src="http://placekitten.com/190/215" /></a> 
+            </div> 
+            <p class="paper-description">Lorem ipsum dolor sit amet</p> 
+            <div class="paper-content"> 
+                <a class="paper-link" href="#"><img src="http://placekitten.com/30/30" /></a> 
+                <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sem mi, egestas a facilisis eget, egestas ut magna.</p> 
+            </div> 
+        </div> 
+         
+        <div class="paper"> 
+            <div class="paper-holder"> 
+                <a><img width="190" src="http://placekitten.com/190/256" /></a> 
+            </div> 
+            <p class="paper-description">Lorem ipsum dolor sit amet</p> 
+            <div class="paper-content"> 
+                <a class="paper-link" href="#"><img src="http://placekitten.com/30/30" /></a> 
+                <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sem mi, egestas a facilisis eget, egestas ut magna.</p> 
+            </div> 
+        </div> 
+         
+        <div class="paper"> 
+            <div class="paper-holder"> 
+                <a><img width="190" src="http://placekitten.com/190/182" /></a> 
+            </div> 
+            <p class="paper-description">Lorem ipsum dolor sit amet</p> 
+            <div class="paper-content"> 
+                <a class="paper-link" href="#"><img src="http://placekitten.com/30/30" /></a> 
+                <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sem mi, egestas a facilisis eget, egestas ut magna.</p> 
+            </div> 
+        </div> 
+         
+        <div class="paper"> 
+            <div class="paper-holder"> 
+                <a><img width="190" src="http://placekitten.com/190/176" /></a> 
+            </div> 
+            <p class="paper-description">Lorem ipsum dolor sit amet</p> 
+            <div class="paper-content"> 
+                <a class="paper-link" href="#"><img src="http://placekitten.com/30/30" /></a> 
+                <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sem mi, egestas a facilisis eget, egestas ut magna.</p> 
+            </div> 
+        </div> 
+         
+        <div class="paper"> 
+            <div class="paper-holder"> 
+                <a><img width="190" src="http://placekitten.com/190/316" /></a> 
+            </div> 
+            <p class="paper-description">Lorem ipsum dolor sit amet</p> 
+            <div class="paper-content"> 
+                <a class="paper-link" href="#"><img src="http://placekitten.com/30/30" /></a> 
+                <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sem mi, egestas a facilisis eget, egestas ut magna.</p> 
+            </div> 
+        </div> 
+         
+        <div class="paper"> 
+            <div class="paper-holder"> 
+                <a><img width="190" src="http://placekitten.com/190/186" /></a> 
+            </div> 
+            <p class="paper-description">Lorem ipsum dolor sit amet</p> 
+            <div class="paper-content"> 
+                <a class="paper-link" href="#"><img src="http://placekitten.com/30/30" /></a> 
+                <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sem mi, egestas a facilisis eget, egestas ut magna.</p> 
+            </div> 
+        </div> 
+         
+        <div class="paper"> 
+            <div class="paper-holder"> 
+                <a><img width="190" src="http://placekitten.com/190/249" /></a> 
+            </div> 
+            <p class="paper-description">Lorem ipsum dolor sit amet</p> 
+            <div class="paper-content"> 
+                <a class="paper-link" href="#"><img src="http://placekitten.com/30/30" /></a> 
+                <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sem mi, egestas a facilisis eget, egestas ut magna.</p> 
+            </div> 
+        </div> 
+         
+        <div class="paper"> 
+            <div class="paper-holder"> 
+                <a><img width="190" src="http://placekitten.com/190/324" /></a> 
+            </div> 
+            <p class="paper-description">Lorem ipsum dolor sit amet</p> 
+            <div class="paper-content"> 
+                <a class="paper-link" href="#"><img src="http://placekitten.com/30/30" /></a> 
+                <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sem mi, egestas a facilisis eget, egestas ut magna.</p> 
+            </div> 
+        </div> 
+         
+        <div class="paper"> 
+            <div class="paper-holder"> 
+                <a><img width="190" src="http://placekitten.com/190/305" /></a> 
+            </div> 
+            <p class="paper-description">Lorem ipsum dolor sit amet</p> 
+            <div class="paper-content"> 
+                <a class="paper-link" href="#"><img src="http://placekitten.com/30/30" /></a> 
+                <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sem mi, egestas a facilisis eget, egestas ut magna.</p> 
+            </div> 
+        </div> 
+         
+        <div class="paper"> 
+            <div class="paper-holder"> 
+                <a><img width="190" src="http://placekitten.com/190/180" /></a> 
+            </div> 
+            <p class="paper-description">Lorem ipsum dolor sit amet</p> 
+            <div class="paper-content"> 
+                <a class="paper-link" href="#"><img src="http://placekitten.com/30/30" /></a> 
+                <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sem mi, egestas a facilisis eget, egestas ut magna.</p> 
+            </div> 
+        </div> 
+         
+        <div class="paper"> 
+            <div class="paper-holder"> 
+                <a><img width="190" src="http://placekitten.com/190/273" /></a> 
+            </div> 
+            <p class="paper-description">Lorem ipsum dolor sit amet</p> 
+            <div class="paper-content"> 
+                <a class="paper-link" href="#"><img src="http://placekitten.com/30/30" /></a> 
+                <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sem mi, egestas a facilisis eget, egestas ut magna.</p> 
+            </div> 
+        </div> 
+         
+        <div class="paper"> 
+            <div class="paper-holder"> 
+                <a><img width="190" src="http://placekitten.com/190/188" /></a> 
+            </div> 
+            <p class="paper-description">Lorem ipsum dolor sit amet</p> 
+            <div class="paper-content"> 
+                <a class="paper-link" href="#"><img src="http://placekitten.com/30/30" /></a> 
+                <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sem mi, egestas a facilisis eget, egestas ut magna.</p> 
+            </div> 
+        </div> 
+         
+        <div class="paper"> 
+            <div class="paper-holder"> 
+                <a><img width="190" src="http://placekitten.com/190/230" /></a> 
+            </div> 
+            <p class="paper-description">Lorem ipsum dolor sit amet</p> 
+            <div class="paper-content"> 
+                <a class="paper-link" href="#"><img src="http://placekitten.com/30/30" /></a> 
+                <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sem mi, egestas a facilisis eget, egestas ut magna.</p> 
+            </div> 
+        </div> 
+         
+        <div class="paper"> 
+            <div class="paper-holder"> 
+                <a><img width="190" src="http://placekitten.com/190/192" /></a> 
+            </div> 
+            <p class="paper-description">Lorem ipsum dolor sit amet</p> 
+            <div class="paper-content"> 
+                <a class="paper-link" href="#"><img src="http://placekitten.com/30/30" /></a> 
+                <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sem mi, egestas a facilisis eget, egestas ut magna.</p> 
+            </div> 
+        </div> 
+         
+        <div class="paper"> 
+            <div class="paper-holder"> 
+                <a><img width="190" src="http://placekitten.com/190/317" /></a> 
+            </div> 
+            <p class="paper-description">Lorem ipsum dolor sit amet</p> 
+            <div class="paper-content"> 
+                <a class="paper-link" href="#"><img src="http://placekitten.com/30/30" /></a> 
+                <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sem mi, egestas a facilisis eget, egestas ut magna.</p> 
+            </div> 
+        </div> 
+         
+        <div class="paper"> 
+            <div class="paper-holder"> 
+                <a><img width="190" src="http://placekitten.com/190/326" /></a> 
+            </div> 
+            <p class="paper-description">Lorem ipsum dolor sit amet</p> 
+            <div class="paper-content"> 
+                <a class="paper-link" href="#"><img src="http://placekitten.com/30/30" /></a> 
+                <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sem mi, egestas a facilisis eget, egestas ut magna.</p> 
+            </div> 
+        </div> 
+         
+        <div class="paper"> 
+            <div class="paper-holder"> 
+                <a><img width="190" src="http://placekitten.com/190/258" /></a> 
+            </div> 
+            <p class="paper-description">Lorem ipsum dolor sit amet</p> 
+            <div class="paper-content"> 
+                <a class="paper-link" href="#"><img src="http://placekitten.com/30/30" /></a> 
+                <p class="paper-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sem mi, egestas a facilisis eget, egestas ut magna.</p> 
+            </div> 
+        </div> 
+            <!-- 라이트박스 --> 
+    <div id="darken-background"> 
+        <div id="lightbox"> 
+            <div class="user-information"> 
+                <a class="user-information-image" href="#">
+                    <img src="http://placekitten.com/70/70" />
+                </a> 
+                <div class="user-information-text">
+                    <h3>User</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sem mi, egestas a facilisis eget, egestas ut magna.</p>
+                </div> 
+            </div>
+            <hr class="lightbox-splitter" />
+            <img src="http://placekitten.com/600/750" /> 
+        </div> 
+    </section> 
+	
+	<div id="main-footer">
+		<footer class="container">
+			<div>@1991-2021 Example, All rights reserved.</div>
+		</footer>
+	</div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+ --> <!-- 테이블 설정을 위해 삭제 테이블안에 쿼리가 들어이음 -->
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		
+		$.get("../main",
+				  {
+					sign :"listArticles.do"
+				  
+				
+				  },
+				  function(data){
+						console.log(data); //data가 {"articleList":[{},{},{}]} 이렇게 올것
+						data=JSON.parse(data); //JavaScript Object로 변환 // javascript object는 {articleList:[{},{},{}] 이렇게 생김}
+					  	//const list=data.articleList;
+					  	
+					  	let table ="<table class='table'><tr class='table-primary'><th>글번호</th><th>작성자</th><th>제목</th><th>작성일</th></tr>"
+						for(let i=0; i<data.length; i++){
+					  		console.log(data[i]);
+					  		table +="<tr class='table-info'><td>"+data[i].articleNO+"</td>";
+					  		table +="<td>"+data[i].id+"</td>";
+					  		/* if(data[i].level != 1){//답글일 경우 
+					  			table += "<td><a href='../Main?articleNo="+data[i].articleNO+"&sign=viewArticle.do'><span style='padding-left:"+(data[i].level*20)+"px'>↪" +data[i].title+"</span></a></td>";
+						  			//유동적으로 더해질 수 있도록
+					  		}else{// 첫글일경우
+					  		table += "<td><a href='../Main?articleNo="+data[i].articleNO+"&sign=viewArticle.do'>" +data[i].title+"</a></td>";
+					  		} */
+					  		if(data[i].level != 1){//답글일 때
+								  table += "<td><a href='../main?articleNo="+ data[i].articleNO +"&sign=viewArticle.do'><span style='padding-left:"+(data[i].level*20)+"px'> ↪"+data[i].title+"</span></a></td>";
+							  }else{//첫글일 때
+								  table += "<td><a href='../main?sign=a'>"+data[i].title+"</a></td>";
+								  //table += "<td><a href='../main?articleNo="+ data[i].articleNO +"&sign=viewArticle.do'>"+data[i].title+"</a></td>";
+							  }
+
+					  		table += "<td>"+data[i].writeDate+"</td></tr>";
+					  		console.log(table);
+					  	}
+					  	table +="</table>"
+					  	$("#boardListDiv").html(table);
+			 		   });
+	});
+		
+		
+
+</script>
+</head>
+<body>  <!--  input 태그에서 id를 주면 같은 거 주지 못함 따라서 체크박스는 name으로 줘야함 -->
+	<div class="container"> <!-- 테이블 스타일지정하기 위해 -->
+	<h2 style="text-align:center;">게시판</h2><br>
+	<div id="boardListDiv"></div>
+	</div>
+	<center><a href='boardWrite.html' >글쓰기</a></center>
+</body>
+</html>

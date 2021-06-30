@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('button').click(function(){
+			
+			const subject=$('input:checkbox[name=subject]:checked');
+			const subject_value=[];
+			for(let i=0;i<subject.length;i++){
+				subject_value.push(subject[i].value);
+			}
+			
+			console.log(subject_value);
+			
+			$.post("../main",
+					  {		
+						sign:"subject",
+					    subject_value
+					  },
+					  function(){			 
+						  
+					      window.close(); 
+					  }
+			); 			
+		});
+	});
+
+</script>
+</head>
+<body>
+	당신이 아는 랭귀지는?<br>
+	자바 <input name='subject' type="checkbox" value="java"><br>
+	C <input name='subject' type="checkbox" value="C"><br>
+	python <input name='subject' type="checkbox" value="python"><br>
+	Android <input name='subject' type="checkbox" value="Android"><br>
+	
+	<button>전송</button>
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+package ex02;
+
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.xml.XmlBeanFactory;
+import org.springframework.core.io.FileSystemResource;
+
+public class Test {
+
+		public static void main(String[] args) {
+			/*
+			 * shape c= new Circle(); c.area(); //override 기법
+			 * 
+			 * 
+			 * shape r = new Rectangle(); r.area();
+			 * 
+			 * shape t=new Triangle(); t.area();
+			 */
+			BeanFactory factory = new XmlBeanFactory(new FileSystemResource("beans.xml"));
+			
+			shape s=(shape) factory.getBean("c");
+			s.area();
+
+			s=(shape) factory.getBean("r");
+			s.area();
+			
+			s=(shape) factory.getBean("t");
+			s.area();
+		}
+}

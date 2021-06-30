@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+	function a(){alert("강의하다");}
+	function d(){alert("강의");}
+	 function b(food){alert(food+"을 좋아한다");}
+	 function c(){console.log("직립보행한다");}
+		let member1={
+				name:"전은수",
+				age : 52,
+				gender : 'F',
+				isPretty :true,
+				height : 160.5,
+				job : a,
+				eat : b,
+				walk : c
+		};
+		
+		let member2={
+				name:"전지현",
+				age : 55,
+				gender : 'F',
+				isPretty :true,
+				height : 150.5,
+				job :d,
+				eat : b,
+				walk : c
+		};
+		
+		member1.job();
+		member2.job();
+		member2.eat('밥');
+	</script>
+
+</body>
+</html>

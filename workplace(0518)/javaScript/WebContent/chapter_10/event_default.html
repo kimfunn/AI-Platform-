@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Traditional Event - Default Event</title>
+   	<script src="../js/jquery.js">
+   	
+   	</script>
+    <script>
+    
+    	function a(){
+    		const id_input=document.getElementById('id');
+    		alert(id_input.value);
+    		if(id_input.value==''|| id_input.value==undefined) return false;
+    		else return true;
+    	}
+    
+    </script>
+</head>
+<body> 
+
+    <a id="button" href="http://hanb.co.kr">버튼</a>
+    
+    <br>
+    <br>
+    <form action="cgi" onsubmit ="return a();">
+    	ID <input id="id">
+    	<input type="submit" value="로그인" id="submit">
+    	 </form>
+
+    
+</body>
+</html>
+<!--   form 태그하면 cgi로 위치
+ 
+     //  value를 로그인으로 하면 라벨이 로그인
+ 	//  제출 (value를 안주면 자동으로 "쿼리 전송")
+ -->

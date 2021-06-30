@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('h1:nth-child(1)').text("<a href=''>여기</a>"); //textContent
+		$('h1:nth-child(2)').html("<a href=''>여기</a>"); //innerHTML
+		alert($('h1:nth-child(3)').text());
+		
+		
+	});
+	
+	
+
+
+</script>
+</head>
+<body>
+	<h1> Header-0 </h1>
+	<h1> Header-1 </h1>
+	<h1> Header-2 </h1>
+
+</body>
+</html>
