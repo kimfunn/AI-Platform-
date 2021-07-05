@@ -11,20 +11,16 @@
 			const id=$('#id').val();
 			const pw=$('#pw').val();
 			alert(name+":"+id+":"+pw);
-			//console.log(opener.document.getElementById("welcomeMsg"));
-			
 			//회원가입 요청
-			//AJAX 기술 활용 https://www.w3schools.com/js/js_ajax_intro.asp
-			// JQuery-AJAX https://www.w3schools.com/jquery/jquery_ajax_intro.asp
-			/* 
-			$.get('../Main?name='+name+"&id="+id+"&pw="+pw,function(data, status){
+			//jQuery-AJAX
+			/* $.get('../main?name='+name+"&id="+id+"&pw="+pw,function(data, status){
 				alert("Data: " + data + "\nStatus: " + status);
 				window.close();
 			}); */
-
+			
 			$.post("../main",
 					  {
-						sign :"memberInsert",
+						sign:"memberInsert",
 					    name,
 					    id,
 					    pw
@@ -32,12 +28,12 @@
 					  function(data, status){
 					    alert("Data: " + data + "\nStatus: " + status);
 					    window.close();
-					  });
+					  }
+			);
 			
-			
-			
+			//console.log(opener.document.getElementById("welcomeMsg"));
 			//opener.document.getElementById("welcomeMsg").textContent=name+"님 환영합니다";
-		
+			
 		});
 	});
 

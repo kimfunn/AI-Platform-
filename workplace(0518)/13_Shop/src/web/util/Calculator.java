@@ -1,13 +1,11 @@
 package web.util;
 
 public class Calculator {
-
 	private static float USD_RATE = 1124.70F;
 	private static float JPY_RATE = 10.113F;
 	private static float CNY_RATE = 163.30F;
 	private static float GBP_RATE = 1444.35F;
 	private static float EUR_RATE = 1295.97F;
-
 	
 	public static String calculate(float won, String operator) {
 		String result = null;
@@ -24,5 +22,4 @@ public class Calculator {
 		}
 		return result;
 	}
-
 }

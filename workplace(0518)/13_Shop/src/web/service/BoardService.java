@@ -8,16 +8,14 @@ import web.vo.ArticleVO;
 
 public class BoardService {
 	
-	BoardDAO dao;
+	BoardDAO dao;	
 
 	public BoardService() {
-		dao =new BoardDAO();
+		dao=new BoardDAO();
 	}
 
-	public ArrayList<ArticleVO> listArticles() throws ShopException {
-	
-		
-		return dao.selectAllArticles(); //dao. selectAllArticles 메소드에서 db에 다녀와야함
+	public ArrayList<ArticleVO> listArticles() throws ShopException {		
+		return dao.selectAllArticles();
 	}
 
 	public void addArticle(ArticleVO vo) throws ShopException {
@@ -25,8 +23,12 @@ public class BoardService {
 		
 	}
 
-	public ArticleVO viewArticle(int articleNO) throws ShopException {
+	public ArticleVO viewArticle(int articleNO) throws ShopException {		
 		return dao.selectArticle(articleNO);
 	}
-	
+
+	public void addReply(ArticleVO vo) throws ShopException {
+		dao.insertNewArticle(vo);
+	}
+
 }
