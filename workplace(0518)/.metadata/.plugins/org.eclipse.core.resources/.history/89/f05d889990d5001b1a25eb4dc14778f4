@@ -1,9 +1,0 @@
-package ex02;
-
-public class Triangle {
-	private int width=4, height=5;
-	
-	public void areaTri() {
-		System.out.println("삼각형의 넓이:"+(width*height/2));
-	}
-}
