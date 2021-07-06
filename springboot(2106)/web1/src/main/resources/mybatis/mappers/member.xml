@@ -4,27 +4,33 @@
    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 
-   <mapper namespace="com.web1.web.dao.MemberDAO">
+   <mapper namespace="com.jes.web1.web.dao.MemberDAO">
  
       <resultMap id="memResult" type="memberVO">
       <result property="id" column="id" />
       <result property="pw" column="pw" />
       <result property="name" column="name" />
-      <result property="address" column="address" />
-      <result property="age" column="age" />
+     
    </resultMap> 
  
  
    <select id="selectAllMemberList" resultMap="memResult"   >
       <![CDATA[
-        select * from member		
+        select * from member
       ]]>
    </select>
 	
+	<select id="loginCheck" parameterType="membervo" resultType="int">
+		<![CDATA[
+			SELECT count(*) FROM member
+			WHERE id = #{id} AND pw =#{pw}
+		]]>
+	</select>
+	
    <update id="updateMember"  parameterType="memberVO">
      <![CDATA[
-	     update member
-	     set pw=#{pw}, name=#{name}, address=#{address}
+	     update  member
+	     set pw=#{pw}, name=#{name}
 	     where
 	     id=#{id}
       ]]>      
@@ -46,8 +52,10 @@
   
    	<insert id="insertMember" parameterType="memberVO">
    	 <![CDATA[
-   	 	insert into member(id,pw,name)
+   	 	insert into  member(id,pw,name)
    	 	values( #{id},#{pw},#{name})
    	 ]]>
+   	 
+   	 
    	</insert>
    </mapper>

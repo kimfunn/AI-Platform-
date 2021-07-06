@@ -13,7 +13,7 @@
 			alert(name+":"+id+":"+pw);
 			//회원가입 요청
 			//jQery-AJAX  아귀먼트에 문자열-url, 콜백평션-갔다와서 응답받은거 어떻게 할지.
-		/* 	$.get('../Main?name='+name+"&id="+id+"&pw="+pw,function(data, status){
+			/*		 	$.get('../Main?name='+name+"&id="+id+"&pw="+pw,function(data, status){
 				alert("Data: " + data + "\nStatus: " + status);
 				window.close();
 			}); */
@@ -25,8 +25,8 @@
 					    pw
 					  },
 					  function(data, status){
-					    alert(data);
-					    //console.log("Data: " + data + "\nStatus: " + status);
+					    
+					    alert("Data: " + data + "\nStatus: " + status);
 						window.close();
 					  });
 

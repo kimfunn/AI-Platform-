@@ -1,22 +1,27 @@
-$(document).ready(function(){
+function f_loginCheck(){
 	
-	$("#loginBtn").click(function(){
-		const id = $("#id").val();
-		const pw = $("#pw").val();
-		alert(id+":"+pw);
-		$.post(
-			"loginById",
-			{id,pw},
-			function(data){
-				data = JSON.parse();
-				if(data.id){
-				$("#loginSpan").html(data.id+"님 환영합니다.");
+	var id= $('input[id="id"]').val();
+	var pw = $('input[id="pw"]').val();
+	var saveIdCheck=$('#save_id:checked').val();
 	
-	}else{
-		alert("다시 로그인해주세요");
-			}
-		  }
-		);
-	});
+	if(savaIdCheck=='on'){
+		localStorage.setItem("saveId",id);
+		
+	}	else{
+		localStorage.setItem("saveId",'N');
+	}
 	
-});
+	var loginData={"id":id,"pw":pw};
+	
+	$.post({
+		
+	})
+	
+	
+	
+	
+	
+	
+	
+	}
+

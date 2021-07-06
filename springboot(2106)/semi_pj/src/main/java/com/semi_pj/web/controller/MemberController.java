@@ -19,7 +19,6 @@ import com.semi_pj.web.vo.MemberVO;
 
 @Controller
 public class MemberController {
-	private static final Logger logger = LoggerFactory.getLogger(MemberController.class);
 	@Autowired
 	MemberSerivce memberService;
 

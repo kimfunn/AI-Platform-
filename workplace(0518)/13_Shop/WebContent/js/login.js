@@ -20,7 +20,7 @@ $(document).ready(function(){
 							 
 						  	  $.cookie("id",data.id,{path:'/'});
 						  	  
-						  	  document.getElementById("welcomeMsg").innerHTML=data.id+"님 환영합니다 <button id='logoutBtn'>로그아웃</button> <button id='memberDeleteBtn'>회원탈퇴</button>";
+						  	  document.getElementById("#welcomeMsg").innerHTML=data.id+"님 환영합니다 <button id='logoutBtn'>로그아웃</button> <button id='memberDeleteBtn'>회원탈퇴</button>";
 						  }//end else						
 					    
 					  }//end function
