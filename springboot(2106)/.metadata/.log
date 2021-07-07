@@ -8326,3 +8326,6 @@ java.util.concurrent.TimeoutException
 
 !ENTRY Activator 1 0 2021-07-07 11:30:51.471
 !MESSAGE Has main method computation for project 'web1'
+
+!ENTRY org.eclipse.ui 2 2 2021-07-07 11:43:05.756
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
