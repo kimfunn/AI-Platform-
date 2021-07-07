@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <!--  web app이 원래 디폴트 web.xml 경로 설정 -->
+  <servlet>
+  	<servlet-name>action</servlet-name>
+  	<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+  	
+  
+  </servlet>
+  
+  <servlet-mapping>
+  
+  	<servlet-name>action</servlet-name>
+  	<url-pattern>*.do</url-pattern> <!--  .do 라고 들어오면 jes 라고 불를 것이고 servlet jes야 -->
+  </servlet-mapping>
+</web-app>

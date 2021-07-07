@@ -5,6 +5,8 @@ C:\workplace(0518)\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1048772
 \10_SecondServlet\src
 C:\workplace(0518)\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2221109932.index
 \11_ServletLifecycle\src
+C:\workplace\workplace(0518)\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2794188521.index
+\18_SpringAnnotation\src
 C:\workplace(0518)\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2775467152.index
 \14_JSPtest\src
 C:\workplace(0518)\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3555030915.index
