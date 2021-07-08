@@ -22,4 +22,9 @@ public class MemberService {
 		return memberDAO.login(m);
 	}
 
+	public void deleteMember(MemberVO m) {
+		memberDAO.deleteMember(m);
+		
+	}
+
 }

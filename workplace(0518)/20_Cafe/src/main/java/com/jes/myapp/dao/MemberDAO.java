@@ -19,4 +19,11 @@ public class MemberDAO {
 	public String login(MemberVO m) {
 		return sqlSession.selectOne("mapper.member.login",m);
 	}
+
+	public void deleteMember(MemberVO m) {
+		sqlSession.delete("mapper.member.memberDelete",m.getId());
+		
+	}
+
+	
 }

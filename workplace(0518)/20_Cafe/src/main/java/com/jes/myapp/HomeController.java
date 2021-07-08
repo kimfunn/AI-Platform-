@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import org.json.simple.JSONObject;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -25,9 +26,25 @@ import com.jes.myapp.vo.MemberVO;
 @Controller
 public class HomeController {
 
+	@Autowired
+	MemberService memberService;
+	@RequestMapping(value = "memberDelete.jes", 
+			method= {RequestMethod.POST},
+			produces = "application/text; charset=utf8")			
+	@ResponseBody
+	public String memberDelete(HttpServletRequest request,
+			HttpServletResponse response){
 		
-		@Autowired
-		MemberService memberService;
+			HttpSession session=request.getSession(false);
+			MemberVO m = (MemberVO) session.getAttribute("member");
+			
+			memberService.deleteMember(m);
+			
+			return "";
+		
+	}
+	
+		
 		@RequestMapping(value = "logout.jes", 
 				method= {RequestMethod.POST},
 				produces = "application/text; charset=utf8")			
@@ -52,19 +69,22 @@ public String login(HttpServletRequest request,
 	String id=request.getParameter("id");
 	String pw=request.getParameter("pw");		
 	
+	JSONObject json=new JSONObject();
+	
 	try {
 		MemberVO m=new MemberVO(id,pw); 
 		String name=memberService.login(m);
 		if(name!=null) {
 			HttpSession session=request.getSession();
 			session.setAttribute("member", m);
-			return id+"님 접속중";
+			json.put("name", name);
 		}else {
-			return "로그인 실패";
+			json.put("msg", "로그인실패");
 		}
 	}catch(Exception e) {
-		return e.getMessage();
+		json.put("msg",e.getMessage());
 	}		
+	return json.toJSONString();
 }
 
 		@ResponseBody

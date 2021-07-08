@@ -39,10 +39,18 @@ $(document).ready(function(){
 			  },
 			  function(data, status){	
 			  	//alert(data);	
-			  	data += "<input type='button' value='logout' id='logoutBtn' class='btn btn-primary'>";	
-			  	//동적태그 라고 함 (logout)
-			  	$.cookie("logined",data);		    
-				$("#msgDiv").html(data);						   
+			  	var obj=JSON.parse(data);
+			  	
+			  	if(obj.name){
+			  		data =  obj.name+ "<input type='button' value='logout' id='logoutBtn' class='btn btn-primary'> <input type='button' value='탈퇴' id='deleteBtn' class='btn btn-warning'>";	
+			  		//동적태그 라고 함 (logout)
+			  		$.cookie("logined",data);		    
+					$("#msgDiv").html(data);	
+			  	}else{
+			  		alert(obj.msg);
+			  		location.reload();
+			  	}
+			  					   
 			  }
 			  
 		);//end post() 
@@ -64,6 +72,20 @@ $(document).on("click", "#logoutBtn", function(event) { //로그아웃 처리
 		);//end post() 
 	});//end 로그아웃 처리
 
+////////////////////////회원탈퇴
+$(document).on("click", "#deleteBtn", function(event) { //로그아웃 처리
+		alert("정말 탈퇴하시겠습니까?");
+		$.post("memberDelete.jes",
+			  {			   
+			   
+			  },
+			  function(data, status){		  	
+			  	
+			  	$.removeCookie("logined");	    
+				location.reload();						   
+			  }
+		);//end post() 
+	});//end 로그아웃 처리
 
 	
 	
