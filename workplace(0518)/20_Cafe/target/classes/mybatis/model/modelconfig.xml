@@ -6,7 +6,8 @@
 <configuration>
 
 	<typeAliases>
-		<typeAlias type="com.jes.myapp.vo.MemberVO" alias="memberVO"/>
+		<typeAlias type="my.jes.web.vo.MemberVO" alias="memberVO"/>
+		<typeAlias type="my.jes.web.vo.OrderVO" alias="orderVO"/>
 	</typeAliases>
 
 </configuration>

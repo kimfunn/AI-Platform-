@@ -3,10 +3,49 @@ $(document).ready(function(){
 		$("#msgDiv").html(login);
 		
 		
-		//////다른상품추가하기
+		//////주문하기
+		$("#orderBtn").click(function(){
+			const confirm_data=confirm("다음과 같이 주문하시겠습니까?\n"+items);
+			if(confirm_data){
+			
+				let basket=$.cookie("basket");
+				
+				console.log(basket);
+				
+				$.post('../order.jes',
+					basket,
+					function(data){
+						console.log(data);
+						data=JSON.parse(data);
+						if(data.order_group_no){
+						alert("주문 완료:[주문번호]"+data.order_group_no);
+						$.removeCookie("basket",{path:'/'});
+						window.opener.location.reload();
+						}else{
+						}alert(data.msg);
+					}
+					
+				);
+			}
+		});
+		
+		
+		///////// 장바구니 비우기
+		$("#cancelBtn").click(function(){
+			alert("장바구니를 모두 비웁니다");		
+			$.removeCookie("basket", { path: '/' });// 장바구니 쿠키 삭제
+			window.opener.location.reload();
+			window.close();
+			
+		});
+		
+		
+		
+		/////////다른 상품 주문하기
 		$("#anotherBtn").click(function(){		
-		window.close();
-	});
+			window.close();
+		});
+		
 		
 		////////장바구니 넣기
 		$(".orderForm").click(function(event){
@@ -34,7 +73,7 @@ $(document).ready(function(){
 			}
 			
 			basket=JSON.stringify(basket);
-			$.cookie("basket",basket);
+			$.cookie("basket",basket, { path: '/' });
 			
 			window.open('html/orderForm.html','_blank','width=600,height=400');
 			
