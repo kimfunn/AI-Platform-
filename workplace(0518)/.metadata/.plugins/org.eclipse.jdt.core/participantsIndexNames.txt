@@ -11,6 +11,8 @@ C:\workplace\workplace(0518)\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsear
 \18_SpringAnnotation\src
 C:\workplace(0518)\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2775467152.index
 \14_JSPtest\src
+C:\workplace\workplace(0518)\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3200417860.index
+\Stockup_(SM)\src\main\java
 C:\workplace(0518)\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3555030915.index
 \13_Shop\src
 C:\workplace\workplace(0518)\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\657465714.index
@@ -45,6 +47,8 @@ C:\workplace\workplace(0518)\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsear
 \19_SpringMaven\src\main\java
 C:\workplace\workplace(0518)\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3661281537.index
 \13_Shop_2\src
+C:\workplace\workplace(0518)\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3346663335.index
+\Stockup_(SpringMaven)\src\main\java
 C:\workplace(0518)\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1270927077.index
 \17_SpringMVC\src
 C:\workplace\workplace(0518)\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3555030915.index

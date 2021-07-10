@@ -13,8 +13,10 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import my.jes.web.service.MemberService;
@@ -32,7 +34,9 @@ public class HomeController {
 			method= {RequestMethod.POST},
 			produces = "application/text; charset=utf8")			
 	@ResponseBody
-	public String memberDelete(HttpServletRequest request,
+	public String memberDelete(@RequestParam("id") String id,
+			@RequestParam("pw") String pw, @RequestParam(value="name", required = false) String name, 
+			HttpServletRequest request,
 			HttpServletResponse response){
 		
 			HttpSession session=request.getSession(false);
@@ -64,15 +68,16 @@ public class HomeController {
 		produces = "application/text; charset=utf8")			
 
 		@ResponseBody
-public String login(HttpServletRequest request,
+public String login(@ModelAttribute("info") MemberVO m, HttpServletRequest request,
 		HttpServletResponse response){
-	String id=request.getParameter("id");
-	String pw=request.getParameter("pw");		
-	
+	/*
+	 * String id=request.getParameter("id"); String pw=request.getParameter("pw");
+	 */
 	JSONObject json=new JSONObject();
 	
 	try {
-		MemberVO m=new MemberVO(id,pw); 
+		System.out.println(m);
+		//MemberVO m=new MemberVO(id,pw); 
 		String name=memberService.login(m);
 		if(name!=null) {
 			HttpSession session=request.getSession();
@@ -88,12 +93,14 @@ public String login(HttpServletRequest request,
 }
 
 		@ResponseBody
-		public String memberInsert(HttpServletRequest request,
+		public String memberInsert(@RequestParam("id") String id,
+				@RequestParam("pw") String pw, @RequestParam(value="name", required = false) String name,
+				HttpServletRequest request,
 				HttpServletResponse response)throws Exception{
-			String id=request.getParameter("id");
-			String pw=request.getParameter("pw");
-			String name=request.getParameter("name");
-			
+			/*
+			 * String id=request.getParameter("id"); String pw=request.getParameter("pw");
+			 * String name=request.getParameter("name");
+			 */
 			MemberVO m=new MemberVO(id,pw,name);
 			System.out.print(m);
 			
