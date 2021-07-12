@@ -52,15 +52,14 @@ public class HomeController {
 	}
 
 	
-	@RequestMapping(value = "login.jes", 
-			method= {RequestMethod.POST},
-			produces = "application/text; charset=utf8")			
+	@RequestMapping(value = "login.jes"
+			)			
 	//@ResponseBody
-	public String login(@ModelAttribute("info") MemberVO m, HttpServletRequest request,
+	public MemberVO login(@ModelAttribute("info") MemberVO m, HttpServletRequest request,
 			HttpServletResponse response){
 		
-		JSONObject json=new JSONObject();
-		
+	//	JSONObject json=new JSONObject();
+	
 		try {
 			
 			System.out.println(m);
@@ -69,15 +68,18 @@ public class HomeController {
 			if(name!=null) {//ok
 				HttpSession session=request.getSession();
 				session.setAttribute("member", m);
-				json.put("name", name);
+				m.setName(name);
+	//			json.put("name", name);
 			}else {
-				json.put("msg", "로그인 실패");
+		//		json.put("msg", "로그인 실패");
+				m=new MemberVO();
 			}
 		}catch(Exception e) {
-			json.put("msg", e.getMessage());
+		//	json.put("msg", e.getMessage());
+			m=new MemberVO();
 		}		
 		
-		return json.toJSONString();
+		return m;
 
 	}
 

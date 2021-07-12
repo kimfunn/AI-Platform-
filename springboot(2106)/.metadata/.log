@@ -7064,3 +7064,1869 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.ui 2 2 2021-07-12 14:55:23.417
 !MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:16:56.707
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:16:56.709
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@576b4432[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=559)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:16:56.715
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:16:56.769
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.jface 2 0 2021-07-12 15:16:57.791
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-07-12 15:16:57.791
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.togglelinecommentcommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@261a0d86,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@122de194,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:17:03.888
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:17:03.893
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@576b4432[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=559)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:17:03.898
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:17:28.212
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:17:28.213
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@576b4432[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=559)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:17:28.215
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:33:11.842
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:33:11.844
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@576b4432[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=559)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:33:11.846
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:34:37.427
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:34:37.429
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@576b4432[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=559)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:34:37.431
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-07-12 15:34:38.436
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1956)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2091)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:34:42.270
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:34:42.272
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@576b4432[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=559)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:34:42.274
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-07-12 15:34:47.069
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1956)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2091)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:34:55.667
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:34:55.668
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@576b4432[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=559)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:34:55.669
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-07-12 15:34:55.778
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:385)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2092)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:35:01.548
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:35:01.550
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@576b4432[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=559)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:35:01.551
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:35:08.836
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:35:08.837
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@576b4432[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=559)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:35:08.839
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-07-12 15:35:09.836
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1956)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2091)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-07-12 15:35:13.096
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:385)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2092)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:35:13.928
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:35:13.930
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@576b4432[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=559)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:35:13.932
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:35:21.423
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:35:21.426
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@576b4432[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=559)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:35:21.427
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-07-12 15:35:25.063
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1956)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2091)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-07-12 15:35:26.344
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1956)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2091)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:35:44.028
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:35:44.030
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@576b4432[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=559)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:35:44.032
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-07-12 15:35:45.032
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1956)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2091)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-07-12 15:35:48.325
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1956)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2091)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:35:50.676
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:35:50.678
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@576b4432[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=559)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:35:50.679
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.eclipse.lsp4e 4 0 2021-07-12 15:35:50.974
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1956)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2091)
+	at org.eclipse.lsp4e.jdt.LSJavaCompletionProposalComputer.asJavaProposals(LSJavaCompletionProposalComputer.java:91)
+	at org.eclipse.lsp4e.jdt.LSJavaCompletionProposalComputer.computeCompletionProposals(LSJavaCompletionProposalComputer.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:348)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:340)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.collectProposals(ContentAssistProcessor.java:333)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.computeCompletionProposals(ContentAssistProcessor.java:289)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.lambda$10(AsyncCompletionProposalPopup.java:352)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.lambda$9(AsyncCompletionProposalPopup.java:351)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1764)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1756)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:295)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1016)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1665)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1598)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+
+!ENTRY org.eclipse.lsp4e 4 0 2021-07-12 15:35:55.320
+!MESSAGE java.util.concurrent.CancellationException
+!STACK 0
+java.util.concurrent.ExecutionException: java.util.concurrent.CancellationException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2069)
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.computeCompletionProposals(LSContentAssistProcessor.java:105)
+	at org.eclipse.lsp4e.jdt.LSJavaCompletionProposalComputer.lambda$0(LSJavaCompletionProposalComputer.java:55)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1764)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1756)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:295)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1016)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1665)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1598)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+Caused by: java.util.concurrent.CancellationException
+	at java.base/java.util.concurrent.CompletableFuture.cancel(CompletableFuture.java:2474)
+	at org.eclipse.lsp4e.LanguageServerWrapper.stop(LanguageServerWrapper.java:409)
+	at org.eclipse.lsp4e.LanguageServerWrapper.start(LanguageServerWrapper.java:212)
+	at org.eclipse.lsp4e.LanguageServerWrapper.getInitializedServer(LanguageServerWrapper.java:671)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.lambda$14(LanguageServiceAccessor.java:589)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:550)
+	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLanguageServers(LanguageServiceAccessor.java:602)
+	at org.eclipse.lsp4e.operations.codelens.CodeLensProvider.provideCodeMinings(CodeLensProvider.java:41)
+	at org.eclipse.lsp4e.operations.codelens.CodeLensProvider.provideCodeMinings(CodeLensProvider.java:73)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.lambda$2(CodeMiningManager.java:189)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.getCodeMinings(CodeMiningManager.java:195)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.updateCodeMinings(CodeMiningManager.java:140)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.run(CodeMiningManager.java:129)
+	at org.eclipse.jface.text.source.SourceViewer.updateCodeMinings(SourceViewer.java:1313)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaCodeMiningReconciler.reconciled(JavaCodeMiningReconciler.java:51)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor.reconciled(CompilationUnitEditor.java:1678)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconciled(JavaReconcilingStrategy.java:222)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconciled(JavaCompositeReconcilingStrategy.java:167)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:115)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:210)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:35:55.325
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:35:55.327
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@576b4432[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=559)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:35:55.329
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:36:12.403
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:36:12.407
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@576b4432[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=559)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:36:12.408
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:36:23.479
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:36:23.482
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@576b4432[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=559)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:36:23.483
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.eclipse.lsp4e 4 0 2021-07-12 15:36:27.025
+!MESSAGE java.util.concurrent.CancellationException
+!STACK 0
+java.util.concurrent.ExecutionException: java.util.concurrent.CancellationException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2069)
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.computeCompletionProposals(LSContentAssistProcessor.java:105)
+	at org.eclipse.lsp4e.jdt.LSJavaCompletionProposalComputer.lambda$0(LSJavaCompletionProposalComputer.java:55)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1764)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1756)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:295)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.helpAsyncBlocker(ForkJoinPool.java:1145)
+	at java.base/java.util.concurrent.ForkJoinPool.helpAsyncBlocker(ForkJoinPool.java:3160)
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1929)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2091)
+	at org.eclipse.lsp4e.jdt.LSJavaCompletionProposalComputer.asJavaProposals(LSJavaCompletionProposalComputer.java:91)
+	at org.eclipse.lsp4e.jdt.LSJavaCompletionProposalComputer.computeCompletionProposals(LSJavaCompletionProposalComputer.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:348)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:340)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.collectProposals(ContentAssistProcessor.java:333)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.computeCompletionProposals(ContentAssistProcessor.java:289)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.lambda$10(AsyncCompletionProposalPopup.java:352)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.lambda$9(AsyncCompletionProposalPopup.java:351)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1764)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1756)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:295)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1016)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1665)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1598)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+Caused by: java.util.concurrent.CancellationException
+	at java.base/java.util.concurrent.CompletableFuture.cancel(CompletableFuture.java:2474)
+	at org.eclipse.lsp4e.LanguageServerWrapper.stop(LanguageServerWrapper.java:409)
+	at org.eclipse.lsp4e.LanguageServerWrapper.start(LanguageServerWrapper.java:212)
+	at org.eclipse.lsp4e.LanguageServerWrapper.getInitializedServer(LanguageServerWrapper.java:671)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.lambda$14(LanguageServiceAccessor.java:589)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:550)
+	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLanguageServers(LanguageServiceAccessor.java:602)
+	at org.eclipse.lsp4e.operations.codelens.CodeLensProvider.provideCodeMinings(CodeLensProvider.java:41)
+	at org.eclipse.lsp4e.operations.codelens.CodeLensProvider.provideCodeMinings(CodeLensProvider.java:73)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.lambda$2(CodeMiningManager.java:189)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.getCodeMinings(CodeMiningManager.java:195)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.updateCodeMinings(CodeMiningManager.java:140)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.run(CodeMiningManager.java:129)
+	at org.eclipse.jface.text.source.SourceViewer.updateCodeMinings(SourceViewer.java:1313)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaCodeMiningReconciler.reconciled(JavaCodeMiningReconciler.java:51)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor.reconciled(CompilationUnitEditor.java:1678)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconciled(JavaReconcilingStrategy.java:222)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconciled(JavaCompositeReconcilingStrategy.java:167)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:115)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:210)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:36:31.156
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:36:31.159
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@576b4432[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=559)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:36:31.160
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.eclipse.lsp4e 4 0 2021-07-12 15:36:36.162
+!MESSAGE java.util.concurrent.CancellationException
+!STACK 0
+java.util.concurrent.ExecutionException: java.util.concurrent.CancellationException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2069)
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.computeCompletionProposals(LSContentAssistProcessor.java:105)
+	at org.eclipse.lsp4e.jdt.LSJavaCompletionProposalComputer.lambda$0(LSJavaCompletionProposalComputer.java:55)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1764)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1756)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:295)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.helpAsyncBlocker(ForkJoinPool.java:1145)
+	at java.base/java.util.concurrent.ForkJoinPool.helpAsyncBlocker(ForkJoinPool.java:3160)
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1929)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2091)
+	at org.eclipse.lsp4e.jdt.LSJavaCompletionProposalComputer.asJavaProposals(LSJavaCompletionProposalComputer.java:91)
+	at org.eclipse.lsp4e.jdt.LSJavaCompletionProposalComputer.computeCompletionProposals(LSJavaCompletionProposalComputer.java:59)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:348)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:340)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.collectProposals(ContentAssistProcessor.java:333)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.computeCompletionProposals(ContentAssistProcessor.java:289)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.lambda$10(AsyncCompletionProposalPopup.java:352)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.lambda$9(AsyncCompletionProposalPopup.java:351)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1764)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1756)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:295)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1016)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1665)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1598)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+Caused by: java.util.concurrent.CancellationException
+	at java.base/java.util.concurrent.CompletableFuture.cancel(CompletableFuture.java:2474)
+	at org.eclipse.lsp4e.LanguageServerWrapper.stop(LanguageServerWrapper.java:409)
+	at org.eclipse.lsp4e.LanguageServerWrapper.start(LanguageServerWrapper.java:212)
+	at org.eclipse.lsp4e.LanguageServerWrapper.getInitializedServer(LanguageServerWrapper.java:671)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.lambda$14(LanguageServiceAccessor.java:589)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:550)
+	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLanguageServers(LanguageServiceAccessor.java:602)
+	at org.eclipse.lsp4e.operations.codelens.CodeLensProvider.provideCodeMinings(CodeLensProvider.java:41)
+	at org.eclipse.lsp4e.operations.codelens.CodeLensProvider.provideCodeMinings(CodeLensProvider.java:73)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.lambda$2(CodeMiningManager.java:189)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.getCodeMinings(CodeMiningManager.java:195)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.updateCodeMinings(CodeMiningManager.java:140)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.run(CodeMiningManager.java:129)
+	at org.eclipse.jface.text.source.SourceViewer.updateCodeMinings(SourceViewer.java:1313)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaCodeMiningReconciler.reconciled(JavaCodeMiningReconciler.java:51)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor.reconciled(CompilationUnitEditor.java:1678)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconciled(JavaReconcilingStrategy.java:222)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconciled(JavaCompositeReconcilingStrategy.java:167)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:115)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:210)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:36:36.767
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:36:36.769
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@576b4432[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=559)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:36:36.770
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:36:42.922
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:36:42.923
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@576b4432[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=559)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:36:42.926
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:36:57.282
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:36:57.284
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@576b4432[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=559)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:36:57.286
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-07-12 15:36:58.283
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1956)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2091)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:37:09.013
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:37:09.016
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@576b4432[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=559)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:37:09.017
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-07-12 15:37:10.023
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1956)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2091)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:37:52.661
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:37:52.662
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@576b4432[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=559)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:37:52.664
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:37:58.703
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:37:58.704
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@576b4432[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=559)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:37:58.705
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:38:09.751
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:38:09.753
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@576b4432[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=559)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:38:09.754
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:38:17.316
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:38:17.319
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@576b4432[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=559)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:38:17.320
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY Activator 1 0 2021-07-12 15:38:22.073
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:38:22.074
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:38:22.076
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:38:22.080
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:38:23.003
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:38:23.012
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:38:23.036
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:38:23.038
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:38:23.828
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:38:23.829
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@576b4432[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=559)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:38:23.831
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:39:35.670
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:39:35.672
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@576b4432[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=559)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:39:35.674
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-07-12 15:39:38.041
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1956)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2091)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 1 0 2021-07-12 15:39:50.772
+!MESSAGE [Info]	ESLint server running in node v14.15.4
+
+!ENTRY org.eclipse.lsp4e 4 0 2021-07-12 15:39:55.405
+!MESSAGE [Error]	[tsserver] 'C:\workplace\springboot'��(��) ���� �Ǵ� �ܺ� ����, ������ �� �ִ� ���α׷�, �Ǵ�
+��ġ ������ �ƴմϴ�.
+
+
+!ENTRY Activator 1 0 2021-07-12 15:40:09.943
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:09.945
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:09.952
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:09.964
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:37.832
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:37.835
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:37.839
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:37.850
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:38.944
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:38.950
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:38.954
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:38.958
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:40.084
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:40.086
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:40.094
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:40.250
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:40.405
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:40.410
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:40.415
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:40.427
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:41.051
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:41.052
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:41.053
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:41.067
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:41.726
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:41.729
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:41.732
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:41.749
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:42.143
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:42.145
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:42.146
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:42.185
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:43.720
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:43.723
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:43.725
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:43.728
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:44.096
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:44.098
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:44.098
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:44.107
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:44.896
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:44.903
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:44.910
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:44.913
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:47.555
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:47.556
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:47.562
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:47.569
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:48.395
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:48.397
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:48.406
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:48.409
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:49.536
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:49.539
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:49.546
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:49.556
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:49.844
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:49.854
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:49.861
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:49.864
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:50.256
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:50.263
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:50.269
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:50.273
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:51.172
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:51.175
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:51.186
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:51.190
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:52.419
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:52.421
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:52.431
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:52.435
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:53.076
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:53.077
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:53.079
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:53.086
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:53.844
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:53.852
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:53.856
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:53.860
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:54.753
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:54.755
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:54.756
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:54.762
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:55.296
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:55.298
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:55.304
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:55.310
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:56.930
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:56.931
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:56.937
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:56.939
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:57.616
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:57.618
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:57.621
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:57.623
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:57.795
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:57.798
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:57.801
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:40:57.806
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:00.683
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:00.686
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:00.688
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:00.689
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:01.148
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:01.150
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:01.154
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:01.157
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:01.476
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:01.478
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:01.482
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:01.485
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:03.608
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:03.610
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:03.612
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:03.617
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:04.050
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:04.051
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:04.058
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:04.061
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:04.756
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:04.758
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:04.759
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:04.764
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:05.185
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:05.187
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:05.190
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:05.195
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:06.653
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:06.655
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:06.657
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:06.658
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:07.130
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:07.131
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:07.134
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:07.138
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:08.359
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:08.361
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:08.367
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:08.371
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:08.825
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:08.827
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:08.835
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:08.837
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:11.673
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:11.675
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:11.679
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:11.687
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:12.712
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:12.713
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:12.715
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:12.722
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:13.953
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:13.955
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:13.957
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:13.960
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:14.546
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:14.549
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:14.552
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:14.553
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:15.123
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:15.127
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:15.129
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:15.131
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:15.620
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:15.622
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:15.626
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:15.628
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:15.740
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:15.742
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:15.748
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:15.766
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:17.599
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:17.601
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:17.606
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:17.610
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:22.075
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:22.077
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:22.080
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:22.093
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:22.406
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:22.481
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:22.487
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:22.519
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY org.eclipse.lsp4e 1 0 2021-07-12 15:41:23.117
+!MESSAGE [Info]	ESLint server running in node v14.15.4
+
+!ENTRY Activator 1 0 2021-07-12 15:41:48.049
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:48.055
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:48.061
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:48.064
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:48.953
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:48.956
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:48.960
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:48.964
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:49.157
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:49.158
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:49.160
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:49.162
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:49.537
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:49.538
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:49.539
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:49.548
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:49.769
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:49.770
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:49.776
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:49.778
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:50.330
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:50.332
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:50.336
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:50.337
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:51.167
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:51.169
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:51.173
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:51.179
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:51.584
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:51.586
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:51.587
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:51.589
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:53.088
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:53.090
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:53.091
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:53.096
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:53.991
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:53.992
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:53.994
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:53.996
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:57.905
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:57.906
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:57.911
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:57.913
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:58.652
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:58.653
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:58.657
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:41:58.658
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY org.eclipse.lsp4e 1 0 2021-07-12 15:42:37.095
+!MESSAGE [Info]	ESLint server running in node v14.15.4
+
+!ENTRY Activator 1 0 2021-07-12 15:42:53.505
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:42:53.508
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:42:53.509
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:42:53.526
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:42:55.348
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:42:55.351
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:42:55.353
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:42:55.356
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:43:01.375
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:43:01.380
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:43:01.432
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:43:01.543
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:43:04.015
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:43:04.017
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:43:04.021
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:43:04.029
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:43:05.612
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:43:05.679
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:43:05.690
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:43:06.896
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:43:06.897
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:43:06.899
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:43:06.901
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:43:07.906
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:43:07.908
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@576b4432[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=559)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:43:07.909
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY Activator 1 0 2021-07-12 15:43:09.193
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:43:09.195
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:43:09.200
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:43:09.212
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:43:09.996
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:43:10.122
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:43:10.130
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:43:10.360
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:44:29.912
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:44:29.914
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@576b4432[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=559)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:44:29.915
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:45:34.503
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:45:34.505
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@576b4432[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=559)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:45:34.506
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY Activator 1 0 2021-07-12 15:47:23.392
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:47:23.393
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:47:23.402
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:47:23.506
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:47:24.505
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:47:24.506
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:47:24.508
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:47:24.510
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:47:24.807
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:47:24.809
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:47:24.981
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:47:24.986
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY org.eclipse.lsp4e 4 0 2021-07-12 15:47:25.121
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1956)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2091)
+	at org.eclipse.lsp4e.operations.declaration.OpenDeclarationHyperlinkDetector.detectHyperlinks(OpenDeclarationHyperlinkDetector.java:94)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4209)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1043)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4026)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3626)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:654)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1462)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:47:25.872
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:47:25.873
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@576b4432[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=559)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:47:25.874
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.eclipse.lsp4e 1 0 2021-07-12 15:47:26.326
+!MESSAGE [Info]	ESLint server running in node v14.15.4
+
+!ENTRY Activator 1 0 2021-07-12 15:47:46.759
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:47:46.760
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:47:46.761
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:47:46.764
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:47:50.089
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:47:50.090
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:47:50.092
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:47:50.093
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:48:00.296
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:48:00.297
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:48:00.299
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:48:00.302
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:48:00.781
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:48:00.783
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:48:00.785
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:48:00.786
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:48:01.014
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:48:01.016
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:48:01.017
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:48:01.023
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:48:01.447
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:48:01.448
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:48:01.449
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:48:01.453
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:48:01.829
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:48:01.831
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:48:01.837
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:48:01.840
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:48:02.139
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:48:02.140
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:48:02.148
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:48:02.158
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:48:02.558
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:48:02.559
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:48:02.738
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:48:02.774
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:49:36.300
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:49:36.302
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:49:36.311
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:49:36.436
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:49:38.648
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:49:38.667
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:49:38.775
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:49:38.791
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:49:40.730
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:49:40.734
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:49:40.736
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:49:40.871
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:49:41.339
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:49:41.358
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:49:41.442
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:49:41.471
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:49:45.334
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:49:45.335
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@576b4432[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=559)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:49:45.336
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:50:23.305
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:50:23.306
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@576b4432[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=559)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:50:23.307
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-07-12 15:50:24.306
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1956)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2091)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:50:26.936
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:50:26.938
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@576b4432[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=559)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:50:26.940
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-07-12 15:50:27.936
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1956)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2091)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:50:51.437
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:50:51.438
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@576b4432[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=559)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:50:51.439
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:50:55.296
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:50:55.298
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@576b4432[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=559)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:50:55.300
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-07-12 15:50:55.347
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:385)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2092)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY Activator 1 0 2021-07-12 15:50:57.515
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:50:57.516
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:50:57.517
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:50:57.518
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:50:58.210
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:50:58.240
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:50:58.309
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:50:58.316
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:51:01.768
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:51:01.770
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@576b4432[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=559)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:51:01.771
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY Activator 1 0 2021-07-12 15:51:04.643
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY Activator 1 0 2021-07-12 15:51:04.650
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:51:04.652
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:51:04.655
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:51:05.385
+!MESSAGE Has main method computation for project 'STS_CAFE'
+
+!ENTRY Activator 1 0 2021-07-12 15:51:05.391
+!MESSAGE Has main method computation for project 'myboot01'
+
+!ENTRY Activator 1 0 2021-07-12 15:51:05.430
+!MESSAGE Has main method computation for project 'web1'
+
+!ENTRY Activator 1 0 2021-07-12 15:51:05.438
+!MESSAGE Has main method computation for project 'semi_pj'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:51:24.671
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:51:24.672
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@576b4432[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=559)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-12 15:51:24.673
+!MESSAGE SpringBootLanguageServer exists!

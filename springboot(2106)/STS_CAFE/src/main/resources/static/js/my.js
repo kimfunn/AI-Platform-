@@ -116,13 +116,14 @@ $(document).ready(function(){
 					    pw
 					  },
 					  function(data, status){	
-					  	const obj=JSON.parse(data);
-					  	if(obj.name){
-					  		data = obj.name+ "<input type='button' value='logout' id='logoutBtn' class='btn btn-primary'><input type='button' value='탈퇴' id='deleteBtn' class='btn btn-warning'>";	
+						console.log(data);
+					  //	const obj=JSON.parse(data); //{"name","김재민"}{id:"b",pw:"b", name:"전은수"}
+					  	if(data.name){
+					  		data = data.name+ "<input type='button' value='logout' id='logoutBtn' class='btn btn-primary'><input type='button' value='탈퇴' id='deleteBtn' class='btn btn-warning'>";	
 						  	$.cookie("logined",data);    			  	
 							$("#msgDiv").html(data);		
 					  	}else{
-					  		alert(obj.msg);
+					  		alert(data.msg);
 							location.reload();	
 					  	}
 					  	
