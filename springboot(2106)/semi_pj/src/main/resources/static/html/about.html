@@ -2,55 +2,110 @@
 <html lang="en">
 
 <head>
-    <title>Purple Buzz - About Page</title>
+    <title>Purple Buzz HTML Template with Bootstrap 5 Beta 1</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
     <!-- Load Require CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font CSS -->
-    <link href="assets/css/boxicon.min.css" rel="stylesheet">
+    <link href="../assets/css/boxicon.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <!-- Load Tempalte CSS -->
-    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <link rel="stylesheet" href="../assets/css/templatemo.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/custom.css">
-<!--
-    
-TemplateMo 561 Purple Buzz
+    <link rel="stylesheet" href="../assets/css/custom.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
 
-https://templatemo.com/tm-561-purple-buzz
 
--->
+    <style>
+        .btn-file{
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-file input[type=file] {
+            position: absolute;
+            top: 0;
+                right: 0;
+            min-width: 100%;
+            min-height: 100%;
+            font-size: 100px;
+            text-align: right;
+            filter: alpha(opacity=0);
+            opacity: 0;
+            outline: none;
+            background: white;
+            cursor: inherit;
+            display: block;
+        }
+    </style>
+	<script>
+	$(document).ready(function(){
+		$(function(){	//변경이벤트
+			$('#camera').change(function(){});
+			$('#pic').attr('src',URL.createObjectURL(e.target.files[0]));
+		});
+		
+		$("#uploadBtn").click(function(){
+			$("#msg").html("click");
+			let formData = new FormData();
+			const fileName ='mobile_snapshot_'+Date.now()+'.jpg';
+			formData.append('myFile', $("#camera")[0].files[0]);
+			
+			$.ajax({
+				type : 'post',
+				url : '../upload.jes',
+				cache : false,
+				data : formData,
+				processData : false,
+				contentType : false,
+				success : function(data) {
+					$("#msg").html('Uploaded !!');
+				}
+			});
+		});
+
+	
+
+	});
+	</script>
 </head>
 
 <body>
     <!-- Header -->
     <nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-white shadow">
         <div class="container d-flex justify-content-between align-items-center">
-            <a class="navbar-brand h1" href="index.html">
+            <a class="navbar-brand h1" href="../index.html">
                 <i class='bx bx-buildings bx-sm text-dark'></i>
-                <span class="text-dark h4">Purple</span> <span class="text-primary h4">Buzz</span>
+                <span class="text-dark h4">About</span> <span class="text-primary h4">Stock</span>
             </a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler-success" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
+          <!--  <div class="navbar-brand" href="#">
+			      	<div id="msgDiv">
+			      		ID<input size="5" id="id">
+			      		PW<input size="5" id="pw" type="password">
+			      		<input type="button" id="loginBtn" value="login">
+			      	</div>
+			      </div> -->
             <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="navbar-toggler-success">
                 <div class="flex-fill mx-xl-5 mb-2">
                     <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-dark">
-                        <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="index.html">Home</a>
+                <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="about.html">About</a>
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="about.html">사진등록하기</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="work.html">Work</a>
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="work.html">투자성향 선택하기</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="pricing.html">Pricing</a>
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="pricing.html">주식 장바구니</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link btn-outline-primary rounded-pill px-3" href="contact.html">Contact</a>
@@ -70,18 +125,24 @@ https://templatemo.com/tm-561-purple-buzz
 
     <!-- Start Banner Hero -->
     <section class="bg-light w-100">
-        <div class="container">
-            <div class="row d-flex align-items-center py-5">
-                <div class="col-lg-6 text-start">
-                    <h1 class="h2 py-5 text-primary typo-space-line">About Us</h1>
-                    <p class="light-300">
-                        Vector illustration credit goes to <a rel="nofollow" href="http://freepik.com/" target="_blank">FreePik</a> website. Purple Buzz is provided by TemplateMo. Lorem ipsum dolor sit amet, consectetur.
-                    </p>
-                </div>
-                <div class="col-lg-6">
-                    <img src="./assets/img/banner-img-02.svg">
-                </div>
-            </div>
+ <center>
+<br><br><br>
+		<div style="width:75%;"">먼저 아래의 카메라 켜기 버튼을 눌러 카메라 앱을 실행시키시고 사진을 찍은 뒤 아래의 전송 버튼을 누르세요</div>
+		
+
+	<label class="btn btn-danger btn-file"> 노트북 카메라 켜기
+	<input type="file" id="camera" capture="camera" accept="image/*" style="display: none;" />
+	</label>
+		
+        <br/><br/>
+        <img id="pic" style="width:320px;height:240px;border:solid 1px black" />
+		<br/><br/>
+		<input type="button" value="전송" id="uploadBtn">
+		<br/><br/>
+		<div id="msg"></div>
+	
+	</center>
+	</center>
         </div>
     </section>
     <!-- End Banner Hero -->
@@ -410,12 +471,7 @@ https://templatemo.com/tm-561-purple-buzz
     <!-- End Footer -->
 
 
-    <!-- Bootstrap -->
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <!-- Templatemo -->
-    <script src="assets/js/templatemo.js"></script>
-    <!-- Custom -->
-    <script src="assets/js/custom.js"></script>
+  
 
 </body>
 

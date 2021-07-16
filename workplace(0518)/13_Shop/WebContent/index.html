@@ -22,6 +22,15 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+        <!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   	    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script> <!-- 쿠키를 가져옴 -->
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  		<script type="text/javascript" src="js/index.js"></script>
+    
 </head>
 
 <body>
@@ -38,15 +47,15 @@
             <span id="#loginSpan">Stock</span>
         
           </a>
-     <
-     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>      
-      <span id="welcomeMsg" class="navbar-brand">ID<input id="id" size='3'>PW<input id="pw" size='3' type='password'><button id="loginBtn">로그인</button></span>
-    </div>
+       <div class="container px-4 px-lg-5">
+ 		<div class="navbar-brand" href="#">
+      		<div id="msgDiv">
+     	 		ID<input size="5" id="id">
+    	  		PW<input size="5" id="pw" type="password">
+    	  		<input type="button" id="loginBtn" value="login">
+   		   	</div>
+   	   </div>
+   	
 
           <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
             <ul class="navbar-nav  ml-auto">
@@ -641,14 +650,7 @@
   
   </footer>
  
-  <!-- footer section -->
-
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
-  <script src="js/index.js"></script>
-  <script src="js/login.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
- 
+  
 </body>
 
 </html>

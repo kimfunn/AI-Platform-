@@ -1,5 +1,6 @@
 $(document).ready(function(){
 		var login=$.cookie('logined');
+		
 		$("#msgDiv").html(login);
 		
 		
@@ -116,7 +117,8 @@ $(document).ready(function(){
 					    pw
 					  },
 					  function(data, status){	
-					  	const obj=JSON.parse(data);
+						console.log(data);
+					  const obj=JSON.parse(data); //{"name","김재민"}{id:"b",pw:"b", name:"전은수"}
 					  	if(obj.name){
 					  		data = obj.name+ "<input type='button' value='logout' id='logoutBtn' class='btn btn-primary'><input type='button' value='탈퇴' id='deleteBtn' class='btn btn-warning'>";	
 						  	$.cookie("logined",data);    			  	
