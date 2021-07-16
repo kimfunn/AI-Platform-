@@ -7,15 +7,15 @@ public class STT {
 
 	public static void main(String[] args) {
 		
-		String clientId = "4ah7jwo95w";             // Application Client ID";
-	    String clientSecret = "T1xJmAzPrFnuTCISsdWBSfB3vYW0Rclz7VF1zUlQ";     // Application Client Secret";
+		String clientId = "df";             // Application Client ID";
+	    String clientSecret = "dfe";     // Application Client Secret";
 
 	     
 			DataOutputStream dos=null;
 			BufferedReader br=null;
 			try {
 				String language = "Kor";
-				String apiURL="https://naveropenapi.apigw.ntruss.com/recog/v1/stt?lang=" + language;
+				String apiURL="hdf=" + language;
 				URL url=new URL(apiURL);
 				HttpURLConnection con=(HttpURLConnection) url.openConnection();
 				con.setRequestMethod("POST");

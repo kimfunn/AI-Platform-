@@ -7075,3 +7075,5 @@ Caused by: java.lang.Exception: Resource '/STS_CAFE/pom.xml' does not exist.
 2021-07-15 14:56:58,075 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2021-07-15 14:56:58,082 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 29 resources
 2021-07-15 14:56:58,603 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-07-15 14:56:58,604 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-07-15 14:56:58,605 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workplace\springboot(2106)\web1\src\test\resources
