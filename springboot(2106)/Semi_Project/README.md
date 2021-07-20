@@ -10,24 +10,25 @@
 
 
 
-![1](C:/Users/LG/Desktop/eclipse_1/stock%20magazine/1.jpg)
+![1](README.assets/1.jpg)
 
-![2](C:/Users/LG/Desktop/eclipse_1/stock%20magazine/2.jpg)
+![2](README.assets/2.jpg)
 
-![3](C:/Users/LG/Desktop/eclipse_1/stock%20magazine/3.jpg)
+![3](README.assets/3.jpg)
 
-![4](C:/Users/LG/Desktop/eclipse_1/stock%20magazine/4.jpg)
+![4](README.assets/4.jpg)
 
-![5](C:/Users/LG/Desktop/eclipse_1/stock%20magazine/5.jpg)
+![5](README.assets/5.jpg)
 
-![6](C:/Users/LG/Desktop/eclipse_1/stock%20magazine/6.jpg)
+![6](README.assets/6.jpg)
 
-![7](C:/Users/LG/Desktop/eclipse_1/stock%20magazine/7.jpg)
+![7](README.assets/7.jpg)
 
-![8](C:/Users/LG/Desktop/eclipse_1/stock%20magazine/8.jpg)
+![8](README.assets/8.jpg)
 
-![9](C:/Users/LG/Desktop/eclipse_1/stock%20magazine/9.jpg)
+![9](README.assets/9.jpg)
 
-![10](C:/Users/LG/Desktop/eclipse_1/stock%20magazine/10.jpg)
+![10](README.assets/10.jpg)
 
-![11](C:/Users/LG/Desktop/eclipse_1/stock%20magazine/11.jpg)
+![11](README.assets/11.jpg)
+
