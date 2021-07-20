@@ -22,6 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import my.jes.web.service.OrderService;
 import my.jes.web.vo.MemberVO;
+import my.jes.web.vo.MessageVO;
 import my.jes.web.vo.OrderVO;
 
 @RestController
@@ -29,6 +30,16 @@ public class OrderController {
 
 	@Autowired
 	OrderService orderService;
+	
+	@PostMapping("voiceOrder.jes")
+	public MessageVO voiceOrder(@ModelAttribute  MessageVO vo    ) {
+	
+		System.out.println(vo);
+		String returnMsg=orderService.voiceOrder(vo.getMsg());
+		vo.setMsg(returnMsg);
+		
+		return vo;
+	}
 
 ///////////// 주문 처리 //////////////////
 	@RequestMapping(value = "order.jes", method = { RequestMethod.POST }, produces = "application/text; charset=utf8")

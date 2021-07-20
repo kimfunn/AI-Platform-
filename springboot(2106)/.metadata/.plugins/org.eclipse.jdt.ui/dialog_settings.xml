@@ -18,6 +18,8 @@
 	<section name="completion_proposal_size">
 	</section>
 	<section name="quick_assist_proposal_size">
+		<item key="size.x" value="829"/>
+		<item key="size.y" value="349"/>
 	</section>
 	<section name="RefactoringWizard.preview">
 		<item key="width" value="600"/>
@@ -96,5 +98,8 @@
 		<item key="DIALOG_WIDTH" value="687"/>
 		<item key="DIALOG_HEIGHT" value="1020"/>
 		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+	<section name="BuildPathsPropertyPage">
+		<item key="pageIndex" value="2"/>
 	</section>
 </section>

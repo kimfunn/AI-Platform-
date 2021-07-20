@@ -10,6 +10,8 @@ import java.util.ArrayList;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import my.jes.web.dao.OrderDAO;
+import my.jes.web.util.APIExamTTS;
+import my.jes.web.util.ChatbotProc;
 import my.jes.web.vo.OrderVO;
 
 @Service
@@ -53,4 +55,23 @@ public class OrderService {
 			return null;
 		}
 	}
+
+	public String voiceOrder(String msg) {
+		
+		String returnMsg= ChatbotProc.request(msg);
+		APIExamTTS.request(returnMsg);
+		 
+		 return returnMsg;
+		
+	}
 }
+
+
+
+
+
+
+
+
+
+

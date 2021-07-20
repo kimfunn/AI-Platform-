@@ -8,8 +8,8 @@ import java.util.Date;
 
 public class APIExamTTS {
 	 public static void main(String[] args) {
-			String clientId = "4ah7jwo95w";             // Application Client ID";
-		    String clientSecret = "T1xJmAzPrFnuTCISsdWBSfB3vYW0Rclz7VF1zUlQ";     // Application Client Secret";
+			String clientId = "12";             // Application Client ID";
+		    String clientSecret = "12";     // Application Client Secret";
 
 		    try {
 	    	 String longText=" * 1. maven project 아니어도 됨\r\n" + 
@@ -17,7 +17,7 @@ public class APIExamTTS {
 	    	 		" * 3. 이 파일을 오디오 플레이어로 실행해 보면 '만나서 반갑습니다'라고 나옴\r\n" + 
 	    	 		" * 4. 더 긴 텍스트를 읽어서 처리하도록 응용하기";
 	         String text = URLEncoder.encode("만나서 반갑습니다", "UTF-8"); // 13자
-	         String apiURL = "https://naveropenapi.apigw.ntruss.com/tts-premium/v1/tts";
+	         String apiURL = "33";
 	         URL url = new URL(apiURL);
 	         HttpURLConnection con = (HttpURLConnection)url.openConnection();
 	         con.setRequestMethod("POST");
